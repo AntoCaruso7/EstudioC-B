@@ -1,0 +1,288 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+body{
+    background-color: rgb(235, 188, 206);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+
+}
+
+header{
+    grid-area: header;
+}
+
+
+nav{
+    grid-area: nav;
+}
+
+.main{
+    grid-area:main;
+
+}
+
+footer{
+    grid-area: footer;
+}
+
+
+.contenedor{
+    margin-bottom: 1.5em;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "main"
+    "footer";
+}
+
+
+header{
+    background-color: rgb(36, 11, 44);
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content:space-between;
+    
+}
+
+.logo{ 
+    border: solid 1px rgb(206, 116, 154);
+
+ 
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content:center 
+}
+
+nav ul li{
+    list-style-type: none;
+    margin: 0.8em;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+ 
+}
+
+
+
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    
+  }
+
+.sobreNosotros{
+    display: flex;
+   
+
+}
+
+.fotoAnto{
+    width: 30%;
+    
+}
+
+.fotoJona{
+    width:31.5%
+}
+.biografiaAnto{
+    padding: 30px;
+
+}
+
+.formulario{
+    padding: 30px;
+    
+}
+
+.biografiaJona{
+    padding: 30px;
+}
+
+.padre{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 2em;
+}
+
+.padre div{
+    display: flex;
+}
+
+.padre img{
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.padre p{
+    margin-left: 10px;
+    margin-right: 200px;
+}
+
+.proBono{
+    padding: 2em;
+}
+
+footer{
+    background-color: rgb(207, 107, 182);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*responsive*/
+@media (min-width:500px){
+
+    header{
+        background-color: rgb(36, 11, 44);
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content:space-between;   
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+    }
+
+    .sobreNosotros{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .padre{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 2em;
+    }
+    
+    .padre div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .padre img{
+        width: 300px;
+        margin-bottom: 20px;
+    }
+    
+    .padre p{
+        margin-left: 50px;
+        margin-right: 50px;
+        text-align: center;
+    }
+
+}
+@media (min-width:768px){
+    header{
+        background-color: rgb(36, 11, 44);
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content:space-between;   
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+    }
+
+    .padre{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 2em;
+    }
+    
+    .padre div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .padre img{
+        width: 300px;
+        margin-bottom: 20px;
+    }
+    
+    .padre p{
+        margin-left: 50px;
+        margin-right: 50px;
+        text-align: center;
+    }
+
+    .sobreNosotros{
+        display:flex;
+        align-items: center;
+
+
+        
+    }
+}
+@media(min-width:1024px){
+    header{
+        background-color: rgb(36, 11, 44);
+        display: flex;
+        flex-direction: row;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content:space-between;
+        
+    }
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content:center 
+    }
+
+    .padre{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 2em;
+    }
+    
+    .padre div{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    
+    .padre img{
+        width: 300px;
+        margin-bottom: 20px;
+    }
+    
+    .padre p{
+        margin-left: 10px;
+        margin-right: 200px;
+        text-align: left;
+    }
+
+    .sobreNosotros{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    
+    }
+
+}
