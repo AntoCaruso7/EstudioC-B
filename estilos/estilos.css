@@ -5,11 +5,12 @@
     color: white;
 }
 
-body{
-    background-color: rgb(235, 188, 206);
+body{ 
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background: rgb(131,58,180);
+    background: linear-gradient(0deg, rgba(131,58,180,1) 0%, rgba(253,29,225,1) 65%, rgba(94,5,40,1) 100%);
 
 
 }
@@ -72,10 +73,12 @@ nav ul li{
 nav ul li a{
     text-decoration: none;
     color: white;
- 
+    transition: color 1s;
 }
 
-
+nav ul li a:hover{
+    color:black   
+}
 
 
 

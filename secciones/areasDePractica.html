@@ -8,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Document</title>
 
 </head>
@@ -42,19 +43,19 @@
         <section class="galeria-grid">
             <section class="padre">
                 <div>
-                  <img src="../images/consumer.jpg" alt="">
+                  <img src="../images/consumer.jpg" alt="" data-aos="zoom-in">
                   <p class="consumidor">
                     Derecho de Consumidor. <br> <br>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, quod! Quos amet nam cupiditate. Necessitatibus incidunt sint ab eligendi, reprehenderit consequatur beatae neque error nihil voluptates adipisci, cupiditate eaque repudiandae? <br> <br>
                 </div>
                 <div>
-                  <img src="../images/corporativo.jpg" alt="" >
+                  <img src="../images/corporativo.jpg" alt="" data-aos="zoom-in" >
                   <p class="corporativo">
                     Derecho Corporativo. <br> <br>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, quod! Quos amet nam cupiditate. Necessitatibus incidunt sint ab eligendi, reprehenderit consequatur beatae neque error nihil voluptates adipisci, cupiditate eaque repudiandae? <br> <br>
                 </div>
                 <div>
-                  <img src="../images/salud.jpg" alt="" >
+                  <img src="../images/salud.jpg" alt="" data-aos="zoom-in" >
                   <p class="salud">
                     Derecho de Salud. <br> <br>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, quod! Quos amet nam cupiditate. Necessitatibus incidunt sint ab eligendi, reprehenderit consequatur beatae neque error nihil voluptates adipisci, cupiditate eaque repudiandae? <br> <br>
@@ -73,6 +74,8 @@
         <img src="../images/icons8-teléfono-50.png" alt="iconoTelefono">
     </footer>
 
-
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
