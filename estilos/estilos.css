@@ -1,3 +1,4 @@
+/* comienzo generales */
 *{
     padding: 0px;
     margin: 0px;
@@ -11,39 +12,7 @@ body{
     min-height: 100vh;
     background: rgb(131,58,180);
     background: linear-gradient(0deg, rgba(131,58,180,1) 0%, rgba(253,29,225,1) 65%, rgba(94,5,40,1) 100%);
-
-
 }
-
-header{
-    grid-area: header;
-}
-
-
-nav{
-    grid-area: nav;
-}
-
-.main{
-    grid-area:main;
-
-}
-
-footer{
-    grid-area: footer;
-}
-
-
-.contenedor{
-    margin-bottom: 1.5em;
-    display: grid;
-    grid-template-areas: 
-    "header"
-    "nav"
-    "main"
-    "footer";
-}
-
 
 header{
     background-color: rgb(36, 11, 44);
@@ -53,69 +22,47 @@ header{
     justify-content:space-between;
     
 }
+/* fin generales */
 
-.logo{ 
-    border: solid 1px rgb(206, 116, 154);
-
- 
-}
-nav ul{
-    display: flex;
-    flex-direction: row;
-    justify-content:center 
-}
-
+/* comienzo nav */
 nav ul li{
-    list-style-type: none;
     margin: 0.8em;
 }
 
-nav ul li a{
-    text-decoration: none;
-    color: white;
-    transition: color 1s;
+nav{
+    width: 100%;
 }
-
-nav ul li a:hover{
-    color:black   
-}
-
-
 
 img {
     max-width: 100%;
     height: auto;
     
-  }
+}
+/* fin nav */
 
+/* comienzo Sobre nosotros */
 .sobreNosotros{
     display: flex;
-   
-
 }
 
 .fotoAnto{
-    width: 30%;
-    
+    width: 30%;   
 }
 
 .fotoJona{
     width:31.5%
 }
+
 .biografiaAnto{
     padding: 30px;
-
-}
-
-.formulario{
-    padding: 30px;
-    
 }
 
 .biografiaJona{
     padding: 30px;
 }
+/* fin Sobre nosotros */
 
+/* comienzo áreas de práctica */
 .padre{
     display: grid;
     grid-template-columns: 1fr;
@@ -135,11 +82,15 @@ img {
     margin-left: 10px;
     margin-right: 200px;
 }
+/* fin áreas de práctica */
 
+/* comienzo pro bono */
 .proBono{
     padding: 2em;
 }
+/* fin pro bono */
 
+/* comienzo footer */
 footer{
     background-color: rgb(207, 107, 182);
     display: flex;
@@ -147,8 +98,9 @@ footer{
     justify-content: space-around;
     align-items: center;
 }
+/* fin footer */
 
-/*responsive*/
+/*comienzo responsive*/
 @media (min-width:500px){
 
     header{
@@ -159,6 +111,12 @@ footer{
         align-items: center;
         justify-content:space-between;   
     }
+
+    .nav{
+        display: flex;
+        justify-content: center;
+    }
+
     nav ul{
         display: flex;
         flex-direction: column;
@@ -205,6 +163,12 @@ footer{
         align-items: center;
         justify-content:space-between;   
     }
+
+    .nav{
+        display: flex;
+        justify-content: center;
+    }
+
     nav ul{
         display: flex;
         flex-direction: column;
@@ -242,7 +206,7 @@ footer{
         
     }
 }
-@media(min-width:1024px){
+@media(min-width:992px){
     header{
         background-color: rgb(36, 11, 44);
         display: flex;
@@ -252,6 +216,12 @@ footer{
         justify-content:space-between;
         
     }
+
+    .nav{
+        display: flex;
+        justify-content: end;
+    }
+
     nav ul{
         display: flex;
         flex-direction: row;
@@ -289,3 +259,4 @@ footer{
     }
 
 }
+/*fin responsive*/
