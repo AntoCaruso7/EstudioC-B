@@ -44,48 +44,81 @@
           </nav>
     </header>
     <main>
+      <section class="contacto">
         <div class="col-lg-6 col-md-10 col-sm-10">
-            <form>
-                <div class="form-group">
-                    <label for="nombreYApellido">Ingrese Nombre y Apellido</label> 
-                    <input id="nombreYApellido" name="nombreYApellido" placeholder="Antonella Caruso" type="text" required="required" class="form-control">
-                </div>
-                <div class="form-group">
-                    <label for="email">Ingrese Email</label> 
-                    <input id="email" name="email" placeholder="direccion@gmail.com" type="text" required="required" class="form-control">
-                </div>
-                <div class="form-group">
-                    <label for="tipoDeConsulta">Tipo de Consulta</label> 
-                    <div>
-                    <select id="tipoDeConsulta" name="tipoDeConsulta" required="required" class="custom-select" style="color:black">
-                        <option value="consumidor" style="color:black">Derecho de Consumidor</option>
-                        <option value="corporativo" style="color:black">Derecho Corporativo</option>
-                        <option value="salud" style="color:black">Derecho de Salud</option>
-                    </select>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="textarea">Ingrese su Consulta</label> 
-                    <textarea id="textarea" name="textarea" cols="40" rows="10" required="required" class="form-control"></textarea>
-                </div> 
-                <div class="form-group">
-                    <button name="submit" type="submit" class="btn btn-primary">Enviar</button>
-                </div>
-                </form>
+          <form>
+              <div class="form-group">
+                  <label for="nombreYApellido">Ingrese Nombre y Apellido</label> 
+                  <input id="nombreYApellido" name="nombreYApellido" placeholder="Antonella Caruso" type="text" required="required" class="form-control">
+              </div>
+              <div class="form-group">
+                  <label for="email">Ingrese Email</label> 
+                  <input id="email" name="email" placeholder="direccion@gmail.com" type="text" required="required" class="form-control">
+              </div>
+              <div class="form-group">
+                  <label for="tipoDeConsulta">Tipo de Consulta</label> 
+                  <div>
+                  <select id="tipoDeConsulta" name="tipoDeConsulta" required="required" class="custom-select" style="color:black">
+                      <option value="consumidor" style="color:black">Derecho de Consumidor</option>
+                      <option value="corporativo" style="color:black">Derecho Corporativo</option>
+                      <option value="salud" style="color:black">Derecho de Salud</option>
+                  </select>
+                  </div>
+              </div>
+              <div class="form-group">
+                  <label for="textarea">Ingrese su Consulta</label> 
+                  <textarea id="textarea" name="textarea" cols="40" rows="10" required="required" class="form-control"></textarea>
+              </div> 
+              <div class="form-group">
+                  <button name="submit" type="submit" class="btn btn-primary">Enviar</button>
+              </div>
+              </form>
+              </div>
 
-        </div>
+
+      </section>
+        
+
+        
 
                
     </main>
 
     <footer>
-        <p>Dirección</p>
-        <p>Telefóno</p>
-        <p>Aviso Legal</p>
-        <p>Politicas de Privacidad</p>
-        <img src="../images/icons8-adress-32.png" alt="iconoDireccion">
-        <img src="../images/icons8-teléfono-50.png" alt="iconoTelefono">
+      <div class="row">
+        <div class="col-lg-2 text-center">
+          <a href="#">
+            <p>Dirección</p>
+          </a>
+        </div>
+        <div class="col-lg-2 text-center">
+          <a href="#">
+            <p>Telefóno</p>
+          </a>
+        </div>
+        <div class="col-lg-2 text-center">
+          <a href="#">
+            <p>Aviso Legal</p>
+          </a>
+        </div>
+        <div class="col-lg-2 text-center">
+          <a href="#">
+            <p>Politicas de Privacidad</p>
+          </a>
+        </div>
+        <div class="col-lg-2 text-center">
+          <a href="#">
+            <img src="../images/40.png" alt="iconoDireccion">
+          </a>
+        </div>
+        <div class="col-lg-2 text-center">
+          <a href="#">
+            <img src="../images/wp.png" alt="iconoTelefono">
+          </a>
+        </div> 
+      </div>
     </footer>
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>

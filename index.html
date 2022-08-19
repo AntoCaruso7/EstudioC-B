@@ -13,64 +13,92 @@
 
 </head>
 <body>
-    <div class="contenedor">
+  <header>
 
-        <header>
+      <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+              <img class= "logo"src="./images/icons8-balanza-64.png" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse nav" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="./secciones/areasDePractica.html">Áreas de práctica</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="./secciones/proBono.html">Pro bono</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="./secciones/sobreNosotros.html">Sobre nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="./secciones/contacto.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+  </header>
 
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="./index.html">
-                    <img class= "logo"src="./images/icons8-balanza-64.png" alt="logo">
-                  </a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse nav" id="navbarNav">
-                    <ul class="navbar-nav">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
-                      </li>
-                      <li class="nav-item active">
-                        <a class="nav-link" href="./secciones/areasDePractica.html">Áreas de práctica</a>
-                      </li>
-                      <li class="nav-item active">
-                        <a class="nav-link" href="./secciones/proBono.html">Pro bono</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" href="./secciones/sobreNosotros.html">Sobre nosotros</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" href="./secciones/contacto.html">Contacto</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </nav>
-        </header>
+  <main>
+    <section class="index">
+      <div class="row">
+        <div class="col-12">
+        <img class= "dama" src="./images/dama.jpeg" alt="Inicio">
+        </div>
+      </div>
 
-        <main>
-            <section class="row">
-                <div class="col-12">
-                <img class= "dama" src="./images/dama.jpeg" alt="Inicio">
-                </div>
-            
-            </section> 
-            <h1>Asesoría Legal Innovadora</h1>
-            <P class="radius"> Bienvenidos al Estudio Jurídico C&B. </P>
-            <P>Somos un Estudio Jurídico de excelencia, especializado en varias áreas del derecho.</P> 
-        </main>
-            
-        <footer>
-            <p>Dirección</p>
-            <p>Telefóno</p>
-            <p>Aviso Legal</p>
-            <p>Politicas de Privacidad</p>
-            <img src="./images/icons8-adress-32.png" alt="iconoDireccion">
-            <img src="./images/icons8-teléfono-50.png" alt="iconoTelefono">
-        </footer>
-    
-    </div> 
+      <div class="row text-center contenedorIntro">
+        <h1>Asesoría Legal Innovadora</h1>
+        <p> Bienvenidos al Estudio Jurídico C&B. </P>
+        <P>Somos un Estudio Jurídico de Excelencia, nos hacemos cargo de TU problema. Somos un equipo de abogados especializados en distintas ramas del derecho para adaptarnos a las necesidades de cada cliente. Nuestra misión es acompañar a todos nuestros clientes en sus asuntos legales actuando con un profundo conocimiento de sus negocios como un soporte estratégico de alta calidad para el logro de sus objetivos.</P> 
+      </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </section>
+
+  </main>
+        
+  <footer>
+    <div class="row">
+      <div class="col-lg-2 text-center">
+        <a href="#">
+          <p>Dirección</p>
+        </a>
+      </div>
+      <div class="col-lg-2 text-center">
+        <a href="#">
+          <p>Telefóno</p>
+        </a>
+      </div>
+      <div class="col-lg-2 text-center">
+        <a href="#">
+          <p>Aviso Legal</p>
+        </a>
+      </div>
+      <div class="col-lg-2 text-center">
+        <a href="#">
+          <p>Politicas de Privacidad</p>
+        </a>
+      </div>
+      <div class="col-lg-2 text-center">
+        <a href="#">
+          <img src="./images/40.png" alt="iconoDireccion">
+        </a>
+      </div>
+      <div class="col-lg-2 text-center">
+        <a href="#">
+          <img src="./images/wp.png" alt="iconoTelefono">
+        </a>
+      </div> 
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,262 +1,101 @@
-/* comienzo generales */
-*{
-    padding: 0px;
-    margin: 0px;
-    font-family: 'Roboto', sans-serif;
-    color: white;
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+  color: white;
 }
 
-body{ 
+body {
+  min-height: 100vh;
+  background: linear-gradient(0deg, rgb(131, 58, 180) 0%, rgb(253, 29, 225) 65%, rgb(94, 5, 40) 100%);
+}
+body section {
+  padding: 2rem;
+}
+body section img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  background-color: rgb(235, 78, 164);
+}
+header nav {
+  width: 100%;
+}
+header nav ul li {
+  margin: 0.8em;
+}
+header nav ul li .nav-link {
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+}
+
+footer {
+  background-color: rgb(235, 78, 164);
+  padding: 2rem;
+  box-shadow: 0;
+}
+footer a {
+  text-decoration: none;
+}
+
+.index {
+  padding: 0rem;
+}
+.index .contenedorIntro {
+  padding: 2rem;
+}
+.index .contenedorIntro h1 {
+  font-weight: bold;
+}
+
+.contenedorAreas {
+  padding: 2rem;
+}
+.contenedorAreas .textoArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contenedorAreas .textoArea .tituloArea {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.contenedorProBono .tituloProBono {
+  font-weight: bold;
+}
+
+.contenedorSobreNosotros {
+  padding: 3rem;
+}
+.contenedorSobreNosotros h4 {
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.contacto .form-group {
+  padding: 0.5rem;
+}
+
+@media (min-width: 500px) {
+  .nav {
     display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background: rgb(131,58,180);
-    background: linear-gradient(0deg, rgba(131,58,180,1) 0%, rgba(253,29,225,1) 65%, rgba(94,5,40,1) 100%);
+    justify-content: center;
+  }
 }
-
-header{
-    background-color: rgb(36, 11, 44);
+@media (min-width: 768px) {
+  .nav {
     display: flex;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-content:space-between;
-    
+  }
 }
-/* fin generales */
-
-/* comienzo nav */
-nav ul li{
-    margin: 0.8em;
-}
-
-nav{
-    width: 100%;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    
-}
-/* fin nav */
-
-/* comienzo Sobre nosotros */
-.sobreNosotros{
-    display: flex;
-}
-
-.fotoAnto{
-    width: 30%;   
-}
-
-.fotoJona{
-    width:31.5%
-}
-
-.biografiaAnto{
-    padding: 30px;
-}
-
-.biografiaJona{
-    padding: 30px;
-}
-/* fin Sobre nosotros */
-
-/* comienzo áreas de práctica */
-.padre{
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 2em;
-}
-
-.padre div{
-    display: flex;
-}
-
-.padre img{
-    width: 300px;
-    margin-bottom: 20px;
-}
-
-.padre p{
-    margin-left: 10px;
-    margin-right: 200px;
-}
-/* fin áreas de práctica */
-
-/* comienzo pro bono */
-.proBono{
-    padding: 2em;
-}
-/* fin pro bono */
-
-/* comienzo footer */
-footer{
-    background-color: rgb(207, 107, 182);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-/* fin footer */
-
-/*comienzo responsive*/
-@media (min-width:500px){
-
-    header{
-        background-color: rgb(36, 11, 44);
-        display: flex;
-        flex-direction: column;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-        justify-content:space-between;   
-    }
-
-    .nav{
-        display: flex;
-        justify-content: center;
-    }
-
-    nav ul{
-        display: flex;
-        flex-direction: column;
-        justify-content:center;
-    }
-
-    .sobreNosotros{
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-        
-    }
-
-    .padre{
-        display: grid;
-        grid-template-columns: 1fr;
-        padding: 2em;
-    }
-    
-    .padre div{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .padre img{
-        width: 300px;
-        margin-bottom: 20px;
-    }
-    
-    .padre p{
-        margin-left: 50px;
-        margin-right: 50px;
-        text-align: center;
-    }
-
-}
-@media (min-width:768px){
-    header{
-        background-color: rgb(36, 11, 44);
-        display: flex;
-        flex-direction: column;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-        justify-content:space-between;   
-    }
-
-    .nav{
-        display: flex;
-        justify-content: center;
-    }
-
-    nav ul{
-        display: flex;
-        flex-direction: column;
-        justify-content:center;
-    }
-
-    .padre{
-        display: grid;
-        grid-template-columns: 1fr;
-        padding: 2em;
-    }
-    
-    .padre div{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .padre img{
-        width: 300px;
-        margin-bottom: 20px;
-    }
-    
-    .padre p{
-        margin-left: 50px;
-        margin-right: 50px;
-        text-align: center;
-    }
-
-    .sobreNosotros{
-        display:flex;
-        align-items: center;
-
-
-        
-    }
-}
-@media(min-width:992px){
-    header{
-        background-color: rgb(36, 11, 44);
-        display: flex;
-        flex-direction: row;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-        justify-content:space-between;
-        
-    }
-
-    .nav{
-        display: flex;
-        justify-content: end;
-    }
-
-    nav ul{
-        display: flex;
-        flex-direction: row;
-        justify-content:center 
-    }
-
-    .padre{
-        display: grid;
-        grid-template-columns: 1fr;
-        padding: 2em;
-    }
-    
-    .padre div{
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-    }
-    
-    .padre img{
-        width: 300px;
-        margin-bottom: 20px;
-    }
-    
-    .padre p{
-        margin-left: 10px;
-        margin-right: 200px;
-        text-align: left;
-    }
-
-    .sobreNosotros{
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-    
-    }
-
-}
-/*fin responsive*/
+@media (min-width: 992px) {
+  .nav {
+    justify-content: end;
+  }
+}/*# sourceMappingURL=estilos.css.map */

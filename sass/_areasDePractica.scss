@@ -1,0 +1,12 @@
+.contenedorAreas{
+    padding: 2rem;
+    .textoArea{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .tituloArea{
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
+}

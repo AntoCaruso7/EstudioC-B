@@ -9,7 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -47,28 +48,79 @@
 
     <main>
         <section class="sobreNosotros">
-            <img  class="fotoAnto" src="../images/fotoAnto.jpg" alt="">
-            <p class="biografiaAnto">
-                Antonella Caruso. Abogada UBA. <br> <br>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, quod! Quos amet nam cupiditate. Necessitatibus incidunt sint ab eligendi, reprehenderit consequatur beatae neque error nihil voluptates adipisci, cupiditate eaque repudiandae? <br> <br>
-            </p>
+          <div class="row contenedorSobreNosotros">
+            <div class="col-lg-4">
+              <img src="../images/fotoAnto.jpg" alt="" data-aos="flip-up" data-aos-duration="2000">
+            </div>
 
-            <img  class="fotoJona" src="../images/jona.jpg" alt="">
-            <p class="biografiaJona">
-                Jonathan Baigorria. Abogado UCASAL. <br> <br>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, quod! Quos amet nam cupiditate. Necessitatibus incidunt sint ab eligendi, reprehenderit consequatur beatae neque error nihil voluptates adipisci, cupiditate eaque repudiandae? <br> <br>
-            </p>  
+            <div class="col-lg-7">
+              <h4>Antonella Caruso. Abogada UBA.</h4>
+              <p>
+              Durante los últimos 10 años se ha desempeñado y especializado en el Departamento de Derecho Corporativo y Salud, sin embargo, también ha tramitado procesos judiciales en materia civil, comercial y laboral.
+              Durante su ejercicio profesional también se ha encargado de realizar todo tipo de auditorías empresariales en materia laboral, empresarial y societario.
+              En cuanto a su experiencia en Derecho Corporativo ha realizado constitución de condominios, sociedades, asociaciones, fusión y adquisición de empresas, entre muchas otras.
+              Cuenta con amplia Experiencia y profesionalismo, le garantizan a usted una asesoría de primer nivel en el ámbito que lo requiera y sus conflictos serán solucionados de la mejor manera posible.<br> <br>
+              </p>
+            </div>
+          </div>
+
+          <div class="row contenedorSobreNosotros">
+            <div class="col-lg-4">
+              <img src="../images/jona.jpg" alt="" data-aos="flip-up" data-aos-duration="2000">
+            </div>
+
+            <div class="col-lg-7">
+              <h4>Jonathan Baigorria. Abogado UCASAL.</h4>
+              <p>
+                Actualmente se encuentra cursando el programa de Doctorado en Derecho Civil y Comercial de la Universidad de Buenos Aires.
+                Durante los últimos 3 años se ha desempeñado y especializado en el Departamento de Litigio Civil y Comercial, sin embargo, también ha tramitado procesos judiciales en materia cobratoria y familiar.
+                Además cuenta con amplia experiencia en temas empresariales como, por ejemplo: constitución de condominios, sociedades, asociaciones, fusión y adquisición de empresas, entre muchas otras. 
+                Su profesionalismo y entrega diaria en su trabajo, destacan sobre la mayoría de profesionales del país por lo que con su apoyo usted podrá sentirse confiado de que sus problemas se encuentran en las mejores manos.
+              </p>  
+            </div>
+          </div>
+
         </section>
     </main>
     
     <footer>
-        <p>Dirección</p>
-        <p>Telefóno</p>
-        <p>Aviso Legal</p>
-        <p>Politicas de Privacidad</p>
-        <img src="../images/icons8-adress-32.png" alt="iconoDireccion">
-        <img src="../images/icons8-teléfono-50.png" alt="iconoTelefono">
+      <div class="row">
+        <div class="col-lg-2 text-center">
+          <a href="#">
+            <p>Dirección</p>
+          </a>
+        </div>
+        <div class="col-lg-2 text-center">
+          <a href="#">
+            <p>Telefóno</p>
+          </a>
+        </div>
+        <div class="col-lg-2 text-center">
+          <a href="#">
+            <p>Aviso Legal</p>
+          </a>
+        </div>
+        <div class="col-lg-2 text-center">
+          <a href="#">
+            <p>Politicas de Privacidad</p>
+          </a>
+        </div>
+        <div class="col-lg-2 text-center">
+          <a href="#">
+            <img src="../images/40.png" alt="iconoDireccion">
+          </a>
+        </div>
+        <div class="col-lg-2 text-center">
+          <a href="#">
+            <img src="../images/wp.png" alt="iconoTelefono">
+          </a>
+        </div> 
+      </div>
     </footer>
+    
+    <script>
+      AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
