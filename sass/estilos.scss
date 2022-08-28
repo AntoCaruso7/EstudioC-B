@@ -1,6 +1,20 @@
 $colorPrincipal: linear-gradient(0deg, rgba(131,58,180,1) 0%, rgba(253,29,225,1) 65%, rgba(94,5,40,1) 100%);
 $colorSecundario: rgb(235, 78, 164);
 
+@mixin configTitulos{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+$breakPoints: (
+    xs:0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl:1400px
+);
+
 @import "_generales";
 @import "_header";
 @import "_footer";

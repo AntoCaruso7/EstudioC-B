@@ -1,6 +1,15 @@
 .contacto{
     .form-group{
         padding: 0.5rem;
-
+        .botonEnviar{ 
+            padding: 0.5rem;
+            width: 6rem;
+            border: 1px solid blue;
+        }
+        .botonEliminar{
+            @extend .botonEnviar;
+            background-color: palevioletred;
+        }
     }
+
 }

@@ -1,17 +1,12 @@
-@media (min-width:500px){
+@media (min-width:map-get($breakPoints,xs))
+{
     .nav{
         display: flex;
         justify-content: center;
     }
 }
 
-@media (min-width:768px){
-    .nav{
-        display: flex;
-    }
-}
-
-@media(min-width:992px){
+@media(min-width:map-get($breakPoints,lg)){
     .nav{
         justify-content: end;
     }

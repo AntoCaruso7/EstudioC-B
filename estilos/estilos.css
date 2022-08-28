@@ -17,6 +17,10 @@ body section img {
   max-width: 100%;
   height: auto;
 }
+body h1, body h2, body h3, body h4 {
+  font-size: 2rem;
+  font-weight: bold;
+}
 
 header {
   background-color: rgb(235, 78, 164);
@@ -45,6 +49,24 @@ footer a {
 
 .index {
   padding: 0rem;
+}
+.index .contenedorDama {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+.index .contenedorDama .dama {
+  width: 80%;
+  opacity: 90%;
+}
+.index .contenedorDama .slogan {
+  font-size: 3rem;
+  color: white;
+  text-shadow: 2px 2px 2px rgb(235, 78, 164);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .index .contenedorIntro {
   padding: 2rem;
@@ -82,16 +104,19 @@ footer a {
 .contacto .form-group {
   padding: 0.5rem;
 }
+.contacto .form-group .botonEnviar, .contacto .form-group .botonEliminar {
+  padding: 0.5rem;
+  width: 6rem;
+  border: 1px solid blue;
+}
+.contacto .form-group .botonEliminar {
+  background-color: palevioletred;
+}
 
-@media (min-width: 500px) {
+@media (min-width: 0) {
   .nav {
     display: flex;
     justify-content: center;
-  }
-}
-@media (min-width: 768px) {
-  .nav {
-    display: flex;
   }
 }
 @media (min-width: 992px) {
