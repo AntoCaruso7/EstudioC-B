@@ -1,0 +1,15 @@
+{
+    "name": "estudiocyb",
+    "version": "1.0.0",
+    "description": "página de estudio juridico con 5 secciones",
+    "main": "index.html",
+    "keywords": [
+        "Estudio juridico",
+        "Derecho corporativo",
+        "Consumidor",
+        "Derecho Animal",
+        "Pro Bono UBA"
+    ],
+    "author": "antonella Caruso",
+    "license": "coderhouse"  
+}
