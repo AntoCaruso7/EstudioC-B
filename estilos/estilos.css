@@ -17,7 +17,7 @@ body section img {
   max-width: 100%;
   height: auto;
 }
-body h1, body h2, body h3, body h4 {
+body h1 {
   font-size: 2rem;
   font-weight: bold;
 }
@@ -112,11 +112,18 @@ footer a {
 .contacto .form-group .botonEliminar {
   background-color: palevioletred;
 }
+.contacto .imagenFormulario {
+  display: flex;
+  align-items: center;
+}
 
 @media (min-width: 0) {
   .nav {
     display: flex;
     justify-content: center;
+  }
+  .contactos {
+    padding: 0.5rem;
   }
 }
 @media (min-width: 992px) {

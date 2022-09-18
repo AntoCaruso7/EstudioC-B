@@ -4,10 +4,15 @@
         display: flex;
         justify-content: center;
     }
+
+    .contactos{
+        padding: 0.5rem;
+    }
 }
 
 @media(min-width:map-get($breakPoints,lg)){
     .nav{
         justify-content: end;
     }
+
 }

@@ -29,16 +29,16 @@
                     <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
                   </li>
                   <li class="nav-item active">
-                    <a class="nav-link" href="../secciones/areasDePractica.html">Áreas de práctica</a>
+                    <a class="nav-link" href="./areasDePractica.html">Áreas de práctica</a>
                   </li>
                   <li class="nav-item active">
-                    <a class="nav-link" href="../secciones/proBono.html">Pro bono</a>
+                    <a class="nav-link" href="./proBono.html">Pro bono</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="../secciones/sobreNosotros.html">Sobre nosotros</a>
+                    <a class="nav-link" href="./sobreNosotros.html">Sobre nosotros</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="../secciones/contacto.html">Contacto</a>
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
                   </li>
                 </ul>
               </div>
@@ -47,37 +47,47 @@
     </header>
     <main>
       <section class="contacto">
-        <div class="col-lg-6 col-md-10 col-sm-10">
-          <form>
-              <div class="form-group">
-                  <label for="nombreYApellido">Ingrese Nombre y Apellido</label> 
-                  <input id="nombreYApellido" name="nombreYApellido" placeholder="Antonella Caruso" type="text" required="required" class="form-control">
-              </div>
-              <div class="form-group">
-                  <label for="email">Ingrese Email</label> 
-                  <input id="email" name="email" placeholder="direccion@gmail.com" type="text" required="required" class="form-control">
-              </div>
-              <div class="form-group">
-                  <label for="tipoDeConsulta">Tipo de Consulta</label> 
-                  <div>
-                  <select id="tipoDeConsulta" name="tipoDeConsulta" required="required" class="custom-select" style="color:black">
-                      <option value="consumidor" style="color:black">Derecho de Consumidor</option>
-                      <option value="corporativo" style="color:black">Derecho Corporativo</option>
-                      <option value="animal" style="color:black">Derecho Animal</option>
-                  </select>
-                  </div>
-              </div>
-              <div class="form-group">
-                  <label for="textarea">Ingrese su Consulta</label> 
-                  <textarea id="textarea" name="textarea" cols="40" rows="10" required="required" class="form-control"></textarea>
-              </div> 
-              <div class="form-group">
-                  <button name="submit" type="submit" class="btn btn-primary botonEnviar">Enviar</button>
-                  <button name="submit" type="submit" class="btn btn-primary botonEliminar">Eliminar</button>
-              </div>
-              </form>
-              </div>
+        <h1 class="tituloArea text-center">
+          FORMULARIO DE CONTACTO
+        </h1>
+        <class class="row">
+          <div class="col-lg-6 col-md-10 col-sm-10">
+            <form>
+                <div class="form-group">
+                    <label for="nombreYApellido">Ingrese Nombre y Apellido</label> 
+                    <input id="nombreYApellido" name="nombreYApellido" placeholder="Antonella Caruso" type="text" required="required" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="email">Ingrese Email</label> 
+                    <input id="email" name="email" placeholder="direccion@gmail.com" type="text" required="required" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="tipoDeConsulta">Tipo de Consulta</label> 
+                    <div>
+                    <select id="tipoDeConsulta" name="tipoDeConsulta" required="required" class="custom-select" style="color:black">
+                        <option value="consumidor" style="color:black">Derecho de Consumidor</option>
+                        <option value="corporativo" style="color:black">Derecho Corporativo</option>
+                        <option value="animal" style="color:black">Derecho Animal</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="textarea">Ingrese su Consulta</label> 
+                    <textarea id="textarea" name="textarea" cols="40" rows="10" required="required" class="form-control"></textarea>
+                </div> 
+                <div class="form-group">
+                    <button name="submit" type="submit" class="btn btn-primary botonEnviar">Enviar</button>
+                    <button name="submit" type="submit" class="btn btn-primary botonEliminar">Eliminar</button>
+                </div>
+                </form>
+                </div>
 
+                <div class="col-lg-6 imagenFormulario">
+                  <img src="../images/formulario.jpg" alt="imagenFormulario">
+                </div>
+  
+        </class>
+        
 
       </section>
         
@@ -109,12 +119,12 @@
             <p>Politicas de Privacidad</p>
           </a>
         </div>
-        <div class="col-lg-2 text-center">
+        <div class="col-lg-2 text-center contactos">
           <a href="#">
             <img src="../images/40.png" alt="iconoDireccion">
           </a>
         </div>
-        <div class="col-lg-2 text-center">
+        <div class="col-lg-2 text-center contactos">
           <a href="#">
             <img src="../images/wp.png" alt="iconoTelefono">
           </a>
